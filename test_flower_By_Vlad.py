@@ -40,4 +40,7 @@ class TestFlowers(unittest.TestCase):
         self.assertEqual(bouquet.price(), 230)
         bouquet.flowers[1].flower.setprice(30)
         self.assertEqual(bouquet.price(), 240)
-        self.assertEqual(bouquet.flowers[0].flower.color, 'red')
+        self.assertEqual(bouquet.flowers[0].flower.color, 'red', 'Перевірка кольору')
+
+if __name__ == "__main__":
+    unittest.main()
